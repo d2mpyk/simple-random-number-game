@@ -6,7 +6,7 @@ let numeroAleatorio = Math.floor(Math.random() * numeroLimite) + 1;
 let intentos = 5;
 
 while (intentos > 0) {
-    let numeroUsuario = prompt(`Adivina el numero aleatorio, tienes ${intentos} ${intentos == 1 ? 'vez' : 'veces'}`);
+    let numeroUsuario = prompt(`Adivina el numero aleatorio, del 0 al ${numeroLimite}, tienes ${intentos} ${intentos == 1 ? 'intento' : 'intentos'}`);
     if (numeroUsuario == numeroAleatorio) {
         Alert(`Acertaste el numero aleatorio en ${intentos} ${intentos == 1 ? 'vez' : 'veces'}`);
         break;
